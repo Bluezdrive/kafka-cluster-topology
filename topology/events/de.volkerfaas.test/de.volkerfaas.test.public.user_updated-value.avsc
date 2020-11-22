@@ -1,0 +1,35 @@
+{
+  "type": "record",
+  "name": "UserUpdated",
+  "namespace": "de.volkerfaas.arc",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "firstname",
+      "type": "string"
+    },
+    {
+      "name": "lastname",
+      "type": "string"
+    },
+    {
+      "name": "email",
+      "type": "string"
+    },
+    {
+      "name": "gender",
+      "type": "string"
+    },
+    {
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "name": "dateOfBirth",
+      "type": "string"
+    }
+  ]
+}

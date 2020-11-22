@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "AddressCreated",
+  "namespace": "de.volkerfaas.test",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "street",
+      "type": "string"
+    },
+    {
+      "name": "housenumber",
+      "type": "string"
+    },
+    {
+      "name": "postCode",
+      "type": "string"
+    },
+    {
+      "name": "city",
+      "type": "string"
+    },
+    {
+      "name": "country",
+      "type": "string"
+    }
+  ]
+}

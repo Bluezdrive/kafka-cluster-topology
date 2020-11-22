@@ -1,0 +1,28 @@
+domain:
+  name: "de.volkerfaas.test"
+  description: "Test domain for architecture stuff"
+  principal: "User:138166"
+  maintainer:
+    name: "Volker Faas"
+    email: "bluezdrive@volkerfaas.de"
+  visibilities:
+    - type: "public"
+      topics:
+        - name: "address_created"
+          description: "Dummy topic for architecture stuff."
+          numPartitions: 5
+          replicationFactor: 3
+          valueSchema:
+            file: "events/de.volkerfaas.test/de.volkerfaas.test.public.address_created-value.avsc"
+          config:
+            minCompactionLagMs: "100"
+            cleanupPolicy: "compact"
+        - name: "user_updated"
+          description: "Dummy topic for architecture stuff."
+          numPartitions: 7
+          replicationFactor: 3
+          valueSchema:
+            file: "events/de.volkerfaas.test/de.volkerfaas.test.public.user_updated-value.avsc"
+          config:
+            minCompactionLagMs: "100"
+            cleanupPolicy: "compact"
