@@ -12,8 +12,10 @@ domain:
           description: "Dummy topic for architecture stuff."
           numPartitions: 5
           replicationFactor: 3
+          clusters: [sandbox]
           valueSchema:
-            file: "events/de.volkerfaas.test/de.volkerfaas.test.public.address_created-value.avsc"
+            subject: de.volkerfaas.test.public.address_created-value
+            type: AVRO
           config:
             minCompactionLagMs: "100"
             cleanupPolicy: "compact"
@@ -21,8 +23,10 @@ domain:
           description: "Dummy topic for architecture stuff."
           numPartitions: 7
           replicationFactor: 3
+          clusters: [sandbox, development]
           valueSchema:
-            file: "events/de.volkerfaas.test/de.volkerfaas.test.public.user_updated-value.avsc"
+            subject: de.volkerfaas.test.public.user_updated-value
+            type: AVRO
           config:
             minCompactionLagMs: "100"
             cleanupPolicy: "compact"
