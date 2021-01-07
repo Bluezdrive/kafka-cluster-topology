@@ -10,7 +10,7 @@ domain:
       topics:
         - name: "address_created"
           description: "Dummy topic for architecture stuff."
-          numPartitions: 5
+          numPartitions: 3
           replicationFactor: 3
           clusters: [sandbox, development]
           valueSchema:
