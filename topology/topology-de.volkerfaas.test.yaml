@@ -25,7 +25,7 @@ domain:
           replicationFactor: 3
           clusters: [sandbox, development]
           valueSchema:
-            subject: de.volkerfaas.test.public.user_updated-value
+            subject: de.volkerfaas.test.user_updated-value
             type: AVRO
           config:
             minCompactionLagMs: "100"
