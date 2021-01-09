@@ -23,7 +23,7 @@ domain:
           description: "Dummy topic for architecture stuff."
           numPartitions: 7
           replicationFactor: 3
-          clusters: [sandbox]
+          clusters: [sandbox, development]
           valueSchema:
             subject: de.volkerfaas.test.public.user_updated-value
             type: AVRO
