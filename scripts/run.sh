@@ -1,3 +1,3 @@
 #!/bin/sh
-docker run --name kafka-cluster-manager -v "$(pwd)/topology:/home/topology" -v "$(pwd)/conf:/home/conf" bluezdrive/kafka-cluster-manager:2.4 "$@"
+docker run --name kafka-cluster-manager -v "$(pwd)/topology:/home/topology" -v "$(pwd)/conf:/home/conf" bluezdrive/kafka-cluster-manager:2.5 "$@"
 docker rm /kafka-cluster-manager > /dev/null 2>&1
